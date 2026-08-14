@@ -2,7 +2,7 @@
 export default function App() {
   return (
     <main>
-      hello
+      hello dev
     </main>
   )
 }
