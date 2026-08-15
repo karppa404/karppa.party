@@ -1,5 +1,6 @@
 import { Link } from "react-router"
 import { siGithub } from "simple-icons"
+import { ModeToggle } from "@/components/mode-toggle"
 
 export function Footer() {
   return (
@@ -18,6 +19,8 @@ export function Footer() {
             <path d={siGithub.path} />
           </svg>
         </Link>
+
+        <ModeToggle />
       </div>
     </footer>
   )
