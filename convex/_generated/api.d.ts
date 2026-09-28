@@ -8,7 +8,14 @@
  * @module
  */
 
+import type * as crons from "../crons.js";
+import type * as games from "../games.js";
+import type * as partyModel from "../partyModel.js";
+import type * as quiz from "../quiz.js";
+import type * as quizModel from "../quizModel.js";
+import type * as roomAccess from "../roomAccess.js";
 import type * as rooms from "../rooms.js";
+import type * as wordList from "../wordList.js";
 
 import type {
   ApiFromModules,
@@ -17,7 +24,14 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  crons: typeof crons;
+  games: typeof games;
+  partyModel: typeof partyModel;
+  quiz: typeof quiz;
+  quizModel: typeof quizModel;
+  roomAccess: typeof roomAccess;
   rooms: typeof rooms;
+  wordList: typeof wordList;
 }>;
 
 /**
